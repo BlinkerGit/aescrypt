@@ -6,6 +6,18 @@ AESCrypt uses the AES-256-CBC cipher and encodes the encrypted data with Base64.
 
 A corresponding gem to easily handle AES encryption / decryption in Objective-C is available at http://github.com/Gurpartap/AESCrypt-ObjC.
 
+
+## Demo
+
+```ruby
+require 'aescrypt'
+msg = 'eb2GUVi97+Cm/T2KAw8kei7Z572iOCH4/nZszMIr9Cs0UtMJisl6wAkgHr0lc9NhanacEwzniQ31ENHP6nIzRg=='
+password = "xxx"
+
+AESCrypt.decrypt(msg, password).force_encoding('utf-8')
+```
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
